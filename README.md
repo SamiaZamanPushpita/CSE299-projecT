@@ -8,7 +8,7 @@
 
 ## About the Project
 
-FeedForward is a web-based food donation platform that connects donors, restaurants, and verified charities. The platform enables users to purchase meal packages from participating restaurants and donate them directly to charitable organizations, promoting transparency, reducing food waste, and supporting communities in need.
+FoodForward is a web-based food donation platform that connects donors, restaurants, and verified charities. The platform enables users to purchase meal packages from participating restaurants and donate them directly to charitable organizations, promoting transparency, reducing food waste, and supporting communities in need.
 
 ## Project Objectives
 
