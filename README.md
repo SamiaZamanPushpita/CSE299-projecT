@@ -2,7 +2,7 @@
 
 - This repository is for our cse299- Junior Project planning and developement. 
 
-# FeedForward
+# FoodForward
 
 ### Connecting Communities, One Meal at a Time.
 
