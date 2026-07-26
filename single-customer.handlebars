@@ -1,0 +1,173 @@
+        <nav>
+          <!--Unordered list element-->
+          <ul>
+            <!--List item element-->
+                <!--Anchor element-->
+            <li>
+              <a href="/welcome-page">Home</a>
+            </li>
+            <li>
+                {{!-- <a id="dashboard-button" href="">Dashboard</a> --}}
+                <a href="/dashboard">Dashboard</a>
+            </li>
+            <li>
+                <a href="/allCustomer">Customers</a>
+            </li>
+            <li>
+                <a href="/packages">Packages</a>
+            </li>
+            <li>
+                <a href="/chat">Chat</a>
+            </li>
+            <li>
+                <a href="/contact-us">Contact Us</a>
+            </li>
+            <li>
+                <button id="logout-single-customer" href="">Logout</button>
+            </li>
+          </ul>  
+        </nav>
+        
+        {{!-- Update alert message--}}
+<div id ="alert-update" class="alert alert-success hide" role="alert">
+
+  <div class="alert-content">
+
+    <div class="alert-header">
+      <button id ="delete-btn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="alert-body">
+      <p id="alert-message">Account updated successfully.</p>
+    </div>
+
+  </div>
+
+</div>
+
+{{!-- Delete alert message--}}
+<div id ="alert-delete" class="alert alert-success hide" role="alert">
+
+  <div class="alert-content">
+
+    <div class="alert-header">
+      <button id ="delete-btn-delete" type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="alert-body">
+      <p id="alert-message">Account deleted successfully.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="main-container" class="">
+    <div class="container-fluid">
+            <div class="row">  
+
+                <div id="bigger" class="col"> 
+                <div id="admin-sidebar">
+                    <ul class="sidenav admin-sidenav list-unstyled">
+                        <li><h4><a id="delete-single-customer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+</svg>  Delete this customer</a></h4></li>           
+                    </ul>
+               </div> 
+                </div> 
+
+                <div class="col"> 
+                  {{!-- <div id="admin-main-control" class="col">
+
+                    <div class="main-content">
+                        <h3>{{customer.first_name}} {{customer.last_name}}</h3>
+
+                            <p>Age: {{customer.age}}</p>
+                            <p>Household of: {{customer.household}}</p>
+                            <p>Package received: {{customer.package}}</p>
+                            <p>Date received: {{customer.date_received}}</p>
+                    </div>
+                    </div> --}}
+
+                  <div id="card-single" class="card border-warning" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"><h3>{{customer.first_name}} {{customer.last_name}}</h3></h5>
+                      {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><span class="categories">Age:</span> {{customer.age}}</li>
+                      <li class="list-group-item"><span class="categories">Household of:</span> {{customer.household}}</li>
+                      <li class="list-group-item"><span class="categories">Package received:</span> {{customer.package}}</li>
+                      <li class="list-group-item"><span class="categories">Date received:</span> {{customer.date_received}}</li>
+                    </ul>
+                  </div>
+              
+                 {{!-- <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><h5 class="card-title"><h3>{{customer.first_name}} {{customer.last_name}}</h3></h5></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div> --}}
+
+
+                </div>
+
+
+                  <div class="col">
+
+                    <div id="form-update-customer" class="col login-form-2">
+                        <h3>Update {{customer.first_name}} {{customer.last_name}}'s account</h3>
+                        <p>Please fill all the fields, even those which will keep the same values.</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" id="first-name-upco" class="form-control" placeholder="First Name *" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="last-name-upco" class="form-control" placeholder="Last Name *" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="age-upco" class="form-control" placeholder="Age *" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="household-upco" class="form-control" placeholder="Household *" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="package-upco" class="form-control" placeholder="Package received *" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="date-upco" class="form-control" placeholder="Date received *" />
+                            </div>
+                            <div class="form-group">
+                                <input id="text-update-btn" type="submit" class="btnSubmit" value="Update account" />
+                            </div>
+                        </form> 
+                    </div>
+
+{{!-- <div>
+                        <li><h4><a id="delete-single-customer">Delete this customer</a></h4></li> 
+</div> --}}
+
+
+
+
+
+
+                  </div>
+{{!-- <div>
+                        <li><h4><a >Delete this customer</a></h4></li> 
+</div> --}}
+                </div>
+              </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/javascript/single-customer.js" ></script>
+<script src="/javascript/logout-single-customer.js"></script>
