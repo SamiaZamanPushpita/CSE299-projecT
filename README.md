@@ -4,8 +4,6 @@
 * [Description of the project](#description-of-the-project)
 * [Technologies used](#technologies-used)
 * [Usage](#usage)
-* [Installation](#installation)
-* [Link URL to GitHub Repository](#link-URL-to-GitHub-repository)
 
 
 ## **_Description of the project_**
@@ -39,7 +37,7 @@ Here are some guidelines for installing the project on your local machine:
 
 4. Store your variables in an .env file. Some of the variables you will need are: ```DB_NAME```, ```DB_PW``` and ```DB_USER``` for your local database credentials, ```DB_EMAIL``` and ```DB_PASS``` for nodemailer/contact-from credentials. And don't forget to include your .env file into your .gitignore to keep your credentials secret.. 🤫
 
-5. Run ```node server.js``` or ```node server``` in your terminal to launch the application. Or check the deployed app directly on our heroku link (https://stark-reaches-12893.herokuapp.com/).
+5. Run ```node server.js``` or ```node server``` in your terminal to launch the application. Or check the deployed app directly on our heroku link.
 
 6. Enjoy and don't hesitate to contribute! 🙂
 
