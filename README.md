@@ -44,13 +44,6 @@ Here are some guidelines for installing the project on your local machine:
 
 6. Enjoy and don't hesitate to contribute! 🙂
 
-## **_Credits_**
-Wayne Edwards: https://github.com/WayneEdwards
-Noemie Grau: https://github.com/Noemiegrau
-Tricia Strickland: https://github.com/tstrickland88
 
-## **_Link URL to GitHub Repository_**
-https://github.com/Noemiegrau/food-forward
 
-## **_Link URL of deployed app to Heroku_**
-https://stark-reaches-12893.herokuapp.com/
+
