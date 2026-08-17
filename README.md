@@ -5,9 +5,8 @@
 * [Technologies used](#technologies-used)
 * [Usage](#usage)
 * [Installation](#installation)
-* [Credits](#credits)
 * [Link URL to GitHub Repository](#link-URL-to-GitHub-repository)
-* [Link URL of deployed app to Heroku](#link-URL-of-deployed-app-to-Heroku)
+
 
 ## **_Description of the project_**
 This project is a full-stack application using Model-View-Controller (MVC) paradigm and is deployed on Heroku. It is a food bank website directed towards its employees where they will be able to login safely into their account via email and protected password, have access to the food bank customer's personnal information, modify, and delete these database information. The employees also have access to a social media like platform where they can post information concerning their work at the food bank, comment on these posts and like.
